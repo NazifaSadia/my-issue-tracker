@@ -1,5 +1,4 @@
 body{
-    /*background-image: url(https://storage.pixteller.com/designs/designs-images/2019-03-27/05/simple-background-backgrounds-passion-simple-1-5c9b95be0d8a6.png);*/
     background-image: url(img/background.png);
     background-size: cover;
     background-position: center;
@@ -12,7 +11,6 @@ body{
     font-family: 'Bitter', serif;
     color: black;
     font-size: 45px;
-    
 }
 
 
@@ -33,7 +31,6 @@ label {
 
 */
 .jumbotron{
-    /*background-image: url(https://img.freepik.com/vrije-vector/van-de-close-up-minimalistisch-honingraatontwerp-als-achtergrond_23-2148386679.jpg?size=626&ext=jpg);*/
     background-color: #f5d5d4;
     box-shadow: 8px 8px 25px black;
     margin-top: 16px;
@@ -71,7 +68,7 @@ label {
 }
 
 .social ul li.facebook:hover{
- background-color: #3b5998;
+    background-color: #3b5998;
 }
 
 .social ul li.github:hover{

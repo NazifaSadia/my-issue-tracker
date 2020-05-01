@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nahian's JS Issue Tracker</title>
+    <!-- For Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!--For Social Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--For Text Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Libre+Baskerville|Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body onload="fetchIssues()">
+    <!--Social icons-->
+    <nav class="social">
+        <ul>
+          <li class="facebook">
+              <a href="https://www.facebook.com/profile.php?id=100007758791130" target="blank"> Facebook
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+          </li>
+        </ul>
+  
+        <ul>
+            <li class="twitter">
+                <a href="#" target="blank"> Twitter
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+        
+        <ul>
+            <li class="github">
+                <a href="#" target="blank"> GitHub
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li class="instagram">
+                <a href="#" target="blank"> Instagram
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li class="youtube">
+                <a href="channel/UCngzaAEyJ95pPk9FF4VpnPw" target="blank"> YouTube
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Main part start-->
+    <div class="container">
+        <h1 class="first_h1_heading">IssueTracker <small style="color: #f5d5d4;">by nazifa</small></h1>
+        <div class="jumbotron">
+            <h3 class="first_h3_heading">Add New Issue:</h3>
+            <form id="issueInputForm">
+              <div class="form-group">
+                <label for="issueDescInput">Description</label>
+                <input type="text" class="form-control" id="issueDescInput" placeholder="Describe the issue" required>
+              </div>
+              <div class="form-group">
+                <label for="issueSeverityInput">Severity</label>
+                <select id="issueSeverityInput" class="form-control">
+                  <option value="Low">Low</option>
+                  <option value="Medium">Medium</option>
+                  <option value="High">High</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="issueAssignedToInput">Assigned To</label>
+                <input type="text" class="form-control" id="issueAssignedToInput" placeholder="Enter responsible" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Add</button>
+            </form>
+        </div>
+
+        <div class="col-lg-12">
+            <div id="issuesList">
+            </div>
+        </div>
+    
+        <div class="footer">
+            <p>&copy; 2020 All Rights Reserved | <a href="#" target="_blank">Nazifa Sadia</a></p>
+        </div>
+    </div>
+
+    <!--JavaScript Part -->
+    <script src="chance.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
